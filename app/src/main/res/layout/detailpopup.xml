@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itempopuplayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:padding="3dp"
+	android:layout_marginLeft="10dp"
+    android:orientation="vertical" >
+    
+	<LinearLayout
+	    android:id="@+id/layoutcode"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="25dp"
+	    android:orientation="horizontal">
+	    
+		<TextView
+		    android:id="@+id/labelitem"
+		    android:layout_width="75dp"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="3dp"
+		    android:gravity="right"
+			android:textSize="@dimen/font_size"
+		    android:text="Item :  "/>
+
+		<TextView
+		    android:id="@+id/txtitem"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="3dp"
+		    android:gravity="left"
+			android:textSize="@dimen/font_size"
+		    android:textStyle="bold" 
+		    android:text=""/>
+			    	
+    </LinearLayout>
+
+
+	<LinearLayout
+		android:id="@+id/layoutbundle"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5dp"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/labelbundle"
+			android:layout_width="75dp"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="3dp"
+			android:gravity="right"
+			android:textSize="@dimen/font_size"
+			android:text="Bundle :  "/>
+
+
+		<LinearLayout
+			android:id="@+id/bundlelayout"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:id="@+id/layoutlistatas"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="10dp"
+				android:gravity="center"
+				android:background="#3af"
+				android:orientation="horizontal" >
+				<TextView
+					android:id="@+id/titemname"
+					android:layout_width="0dp"
+					android:layout_weight="0.6"
+					android:layout_height="wrap_content"
+					android:textSize="@dimen/font_size"
+					android:gravity="left"
+					android:text="Item Name"
+					android:textColor="#FFFFFF"/>
+				<TextView
+					android:id="@+id/titemqty"
+					android:layout_width="0dp"
+					android:layout_weight="0.1"
+					android:layout_height="wrap_content"
+					android:textSize="@dimen/font_size"
+					android:gravity="right"
+					android:layout_marginRight="5dp"
+					android:text="Qty"
+					android:textColor="#FFFFFF"/>
+
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/layoutlist"
+				android:layout_width="fill_parent"
+				android:layout_height="0dp"
+				android:layout_marginRight="10dp"
+				android:layout_marginLeft="3dp"
+				android:layout_weight="0.82"
+				android:background="#FFFFFF"
+				android:layout_marginBottom="5dp"
+				android:orientation="vertical">
+
+				<ListView
+					android:id="@+id/itemlist"
+					android:layout_width="fill_parent"
+					android:layout_height="100dp"/>
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+
+
+
+
+
+
+
+	<LinearLayout
+		android:id="@+id/layoutnotes"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5dp"
+		android:orientation="horizontal">
+
+		<TextView
+			android:id="@+id/labelnotes"
+			android:layout_width="75dp"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="3dp"
+			android:gravity="right"
+			android:textSize="@dimen/font_size"
+			android:text="Notes :  "/>
+
+		<EditText
+			android:id="@+id/edtnotes"
+			android:layout_width="200dp"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="3dp"
+			android:gravity="left"
+			android:textSize="@dimen/font_size"
+			android:lines="3"
+			android:hint="Notes" />
+
+<!--		<EditText
+			android:id="@+id/edtnotes"
+			android:layout_width="200dp"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="3dp"
+			android:gravity="left"
+			android:textSize="@dimen/font_size"
+			android:ellipsize="end"
+			android:lines="3"
+			android:hint="Notes" />-->
+
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:id="@+id/layoutqty"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="5dp"
+	    android:orientation="horizontal">
+
+		<TextView
+		    android:id="@+id/labelitemqty"
+		    android:layout_width="75dp"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="3dp"
+		    android:gravity="right"
+			android:textSize="@dimen/font_size"
+		    android:text="Qty  :  "/>
+
+         <EditText
+             android:id="@+id/edtqty"
+             android:layout_width="75dp"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="3dp"
+             android:gravity="right"
+			 android:textSize="@dimen/font_size"
+			 android:ellipsize="end"
+             android:inputType="number|textNoSuggestions"
+			 android:clickable="true"
+             android:hint="Qty" />
+    </LinearLayout>	
+
+	<LinearLayout
+	    android:id="@+id/layoutprice"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="5dp"
+	    android:orientation="horizontal">
+		
+		<TextView
+		    android:id="@+id/labelitemprice"
+		    android:layout_width="75dp"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="3dp"
+		    android:gravity="right"
+			android:textSize="@dimen/font_size"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+		    android:text="Price  :  "/>
+		
+         <EditText
+             android:id="@+id/edtprice"
+             android:layout_width="140dp"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="3dp"
+             android:gravity="right"
+			 android:textSize="@dimen/font_size"
+             android:text=""
+             android:inputType="text|number|textNoSuggestions"
+             android:hint="Price" />  			    
+	    
+	</LinearLayout>
+	
+	
+	<LinearLayout
+	    android:id="@+id/layoutdisc"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="5dp"
+	    android:orientation="horizontal">
+		
+		<TextView
+		    android:id="@+id/labeldisc"
+		    android:layout_width="75dp"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="3dp"
+		    android:gravity="right"
+			android:textSize="@dimen/font_size"
+		    android:text="Disc  :  "/>
+		<!--
+		<EditText
+			android:id="@+id/edtdisc"
+			android:layout_width="80dp"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="3dp"
+			android:gravity="right|center_vertical"
+			android:text="0"
+			android:textSize="@dimen/font_size"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			android:inputType="text|number|textNoSuggestions"
+			android:hint="Discount" />
+
+		<TextView
+			android:id="@+id/lbldisctemp"
+			android:layout_width="20dp"
+			android:layout_height="wrap_content"
+			android:gravity="left"
+			android:textSize="@dimen/font_size"
+			android:text="%"/>
+		-->
+         <EditText
+             android:id="@+id/edtdiscamt"
+             android:layout_width="170dp"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="3dp"
+			 android:textSize="@dimen/font_size"
+             android:gravity="right"
+             android:text="0"
+			 android:inputType="textNoSuggestions"
+             android:hint="Discount Amount" />
+         	    
+	</LinearLayout>	
+
+	<!-- 	
+	<LinearLayout
+	    android:id="@+id/layoutdisc"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="3dp"
+	    android:orientation="horizontal">
+		
+		<TextView
+		    android:id="@+id/labeldisc"
+		    android:layout_width="100dp"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="3dp"
+		    android:gravity="right"
+		    android:text="Tax  :  "/>
+		
+        <Spinner
+            android:id="@+id/spinnertax"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:layout_gravity="left"
+            android:textSize="12sp"/>
+	    
+	</LinearLayout>
+	-->
+	    
+    <TextView
+        android:id="@+id/txtline"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#000000"/>
+	
+	<LinearLayout
+	    android:id="@+id/layouttotal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="3dp"
+	    android:orientation="horizontal">
+		
+		<TextView
+		    android:id="@+id/labeltotal"
+		    android:layout_width="75dp"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="3dp"
+			android:textSize="@dimen/font_size"
+		    android:gravity="right"
+		    android:text="Total  :  "/>
+		
+         <TextView
+             android:id="@+id/txttotal"
+             android:layout_width="140dp"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="3dp"
+			 android:paddingRight="5dp"
+			 android:textSize="@dimen/font_size"
+			 android:textStyle="bold" 
+             android:gravity="right"
+             android:text=""/>  			    
+	    
+	</LinearLayout>	
+	
+	
+	
+	
+	<LinearLayout
+	    android:id="@+id/layoutbutton"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_gravity="center"
+	    android:gravity="center"
+	    android:layout_marginTop="3dp"
+	    android:orientation="horizontal">						
+			
+		<Button
+		    android:id="@+id/btnsave"
+		    android:layout_width="120dp"
+		    android:layout_height="wrap_content"
+			android:textSize="@dimen/font_size"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"
+			android:textColor="#FFFFFF"
+			android:background="@color/colorAccent"
+		    android:layout_gravity="center"
+		    android:text="Save" />
+
+		<Button
+		    android:id="@+id/btndelete"
+		    android:layout_width="120dp"
+		    android:layout_height="wrap_content"
+			android:textSize="@dimen/font_size"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"
+			android:textColor="#FFFFFF"
+			android:background="@color/colorPrimary"
+		    android:layout_gravity="center"
+		    android:text="Delete" />		
+				    
+		<Button
+		    android:id="@+id/btncancel"
+		    android:layout_width="120dp"
+		    android:layout_height="wrap_content"
+			android:textSize="@dimen/font_size"
+		    android:layout_gravity="center"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"
+			android:textColor="#FFFFFF"
+		    android:text="Cancel" /> 
+	    
+	    
+	</LinearLayout>
+		
+</LinearLayout>

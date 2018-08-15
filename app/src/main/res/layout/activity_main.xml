@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kreators.mybizkios.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/satulayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/headerkirilayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_weight="3"
+            android:background="@color/colorPrimary"
+            android:paddingLeft="10dp">
+
+            <ImageView
+                android:id="@+id/itemImage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_weight="0.2"
+                android:adjustViewBounds="true"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/logo_mybiz" />
+
+            <TextView
+                android:id="@+id/headername"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="20dp"
+                android:text="MyBiz Kios"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_header_master" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layoutUtama1"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/lbl11"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/menu_height"
+                android:layout_weight="0.1" />
+
+
+            <LinearLayout
+                android:id="@+id/layout1dept"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_bg_top"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp"
+                android:paddingTop="17dp">
+
+                <TextView
+                    android:id="@+id/lbl11dept"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/menu_height"
+                    android:layout_weight="0.1" />
+
+                <Button
+                    android:id="@+id/btndept"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/department" />
+
+                <TextView
+                    android:id="@+id/lbl11deptb"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/menu_height"
+                    android:layout_weight="0.1" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lbl12"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/menu_height"
+                android:layout_weight="0.05" />
+
+            <LinearLayout
+                android:id="@+id/layout1partner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_bg_top"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp"
+                android:paddingTop="17dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/menu_height"
+                    android:layout_weight="0.1" />
+
+                <Button
+                    android:id="@+id/btnpartner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/partner_detail" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/menu_height"
+                    android:layout_weight="0.1" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lbl2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/menu_height"
+                android:layout_weight="0.1" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutUtama2"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/lbl13"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/menu_height"
+                android:layout_weight="0.1" />
+
+            <LinearLayout
+                android:id="@+id/layout1item"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_bg_bottom"
+                android:orientation="horizontal"
+                android:paddingBottom="17dp"
+                android:paddingTop="3dp">
+
+                <TextView
+                    android:id="@+id/lbl13start"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/menu_height"
+                    android:layout_weight="0.1" />
+
+                <Button
+                    android:id="@+id/btnitem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/item_detail" />
+
+                <TextView
+                    android:id="@+id/lbl13end"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/menu_height"
+                    android:layout_weight="0.1" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lbl22"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/menu_height"
+                android:layout_weight="0.05" />
+
+            <LinearLayout
+                android:id="@+id/layout1promodtl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/layout_bg_bottom"
+                android:orientation="horizontal"
+                android:paddingBottom="17dp"
+                android:paddingTop="3dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/menu_height"
+                    android:layout_weight="0.1" />
+
+                <Button
+                    android:id="@+id/btnpurchase"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/promo_detail" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/menu_height"
+                    android:layout_weight="0.1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lbl23"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/menu_height"
+                android:layout_weight="0.1" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="275dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layoutUtama21"
+            android:layout_width="fill_parent"
+            android:layout_height="95dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/lbl211"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/menu_height"
+                android:layout_weight="0.1" />
+
+            <Button
+                android:id="@+id/btnpos"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/sesi_kasir" />
+
+            <TextView
+                android:id="@+id/lbl1212"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/menu_height"
+                android:layout_weight="0.05" />
+
+            <Button
+                android:id="@+id/btnsalesrep"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/sales_report" />
+
+            <TextView
+                android:id="@+id/lbl213"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/menu_height"
+                android:layout_weight="0.1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutUtama22"
+            android:layout_width="fill_parent"
+            android:layout_height="95dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/lbl221"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/menu_height"
+                android:layout_weight="0.1" />
+
+            <Button
+                android:id="@+id/btnsalesret"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/sales_return" />
+
+            <TextView
+                android:id="@+id/lbl222"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/menu_height"
+                android:layout_weight="0.05" />
+
+            <Button
+                android:id="@+id/btnutility"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/utility" />
+
+            <TextView
+                android:id="@+id/lbl223"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/menu_height"
+                android:layout_weight="0.1" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

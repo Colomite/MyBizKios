@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kreators.mybizkios.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/satulayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/headerkirilayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_weight="3"
+            android:background="@color/colorPrimary"
+            android:paddingLeft="10dp">
+
+            <ImageView
+                android:id="@+id/itemImage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_weight="0.2"
+                android:adjustViewBounds="true"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/logo_mybiz" />
+
+            <TextView
+                android:id="@+id/headername"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="20dp"
+                android:text="Nama - Master"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_header_master" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layousearch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:id="@+id/tsearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:gravity="left"
+            android:text="SEARCHING FOR"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/font_size" />
+
+        <EditText
+            android:id="@+id/vcode"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textSize="@dimen/font_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutmain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layousearch"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:id="@+id/layoutheader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#CCCCCC"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tcode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:gravity="left"
+                android:text="CODE"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_size" />
+
+            <TextView
+                android:id="@+id/tname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:gravity="left"
+                android:text="@string/textName"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_size" />
+
+            <TextView
+                android:id="@+id/tdepartment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.8"
+                android:gravity="left"
+                android:text="DEPARTMENT"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_size" />
+
+            <TextView
+                android:id="@+id/ttype"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:gravity="left"
+                android:text="TYPE"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_size" />
+
+            <TextView
+                android:id="@+id/titemunit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:gravity="left"
+                android:text="ITEM UNIT"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_size" />
+
+            <TextView
+                android:id="@+id/tminqty"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:gravity="left"
+                android:text="MIN QTY"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_size" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/layoutlist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/itemlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/layoutbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/btnnew"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rb_bluedark"
+                android:text="@string/newButton"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/font_size" />
+
+            <Button
+                android:id="@+id/btnedit"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rb_bluedark"
+                android:text="@string/editButton"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/font_size" />
+
+            <Button
+                android:id="@+id/btnexit"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rb_bluedark"
+                android:text="@string/exitButton"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/font_size" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

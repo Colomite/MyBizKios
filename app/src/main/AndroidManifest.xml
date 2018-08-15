@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kreators.mybizkios">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MasterFolderActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DepartmentEntryActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ItemEntryActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".PartnerEntryActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".PosActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity
+            android:name=".UtilityActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".CustomerTypeEntryActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".CashBankEntryActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SessionEntryActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".UserEntryActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SearchScreen"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.nononsenseapps.filepicker.FilePickerActivity"
+            android:theme="@style/FilePickerTheme"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".MultimediaPickerActivity"
+            android:theme="@style/FilePickerTheme"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SalesReturnActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".BarcodeReaderActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".BluetoothPrinterActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".report.ReportView"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".report.ReportDetail"></activity>
+    </application>
+
+</manifest>

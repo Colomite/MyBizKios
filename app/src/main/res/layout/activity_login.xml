@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kreators.mybizkios.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="COPYRIGHT TO PT. KREATOR SOLUSI INFORMASI - 2018" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutUtama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/labelwc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WELCOME"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="180dp"
+            android:src="@drawable/logo_mybiz" />
+
+        <TextView
+            android:id="@+id/labelplease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="PLEASE SIGN IN TO CONTINUE"
+            android:textSize="@dimen/font_size" />
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="0dp"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/labelusername"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="USERNAME"
+                android:textSize="@dimen/font_size" />
+
+            <LinearLayout
+                android:id="@+id/layedt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtusername"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:inputType="text"
+                    android:textSize="@dimen/font_size" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/labelpass"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="PASSWORD"
+                android:textSize="@dimen/font_size" />
+
+            <LinearLayout
+                android:id="@+id/layedt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtpassword"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:inputType="textWebPassword"
+                    android:textSize="@dimen/font_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutSessionSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/labelsession"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="SESSION"
+                android:textSize="@dimen/font_size" />
+
+            <Spinner
+                android:id="@+id/spinnerLoginSession"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="20dp"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/btnsignin"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/rb_bluedark"
+                android:text="Login"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/font_size" />
+
+            <Button
+                android:id="@+id/btncancel"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/rb_bluedark"
+                android:text="@string/exitButton"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/font_size" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/labelforget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="40dp"
+            android:text="FORGET PASSWORD > "
+            android:textSize="13dp" />
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kreators.mybizkios.PartnerEntryActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/satulayout"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/headerkirilayout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="3"
+                    android:background="@color/colorPrimary"
+                    android:paddingLeft="10dp">
+
+                    <ImageView
+                        android:id="@+id/itemImage"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight="0.2"
+                        android:adjustViewBounds="true"
+                        android:padding="1dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/logo_mybiz" />
+
+                    <TextView
+                        android:id="@+id/headername"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingLeft="20dp"
+                        android:text="MyBiz Kios"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/font_header_master" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutbtntab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btndetail"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="Detail"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/font_size" />
+
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.01"
+                    android:text="Customer Category"
+                    android:textSize="@dimen/font_size" />
+
+
+                <Button
+                    android:id="@+id/btnaddress"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="Address"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/font_size" />
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/layoutscroll"
+                android:layout_width="fill_parent"
+                android:layout_height="600dp"
+                android:layout_marginTop="100dp"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:id="@+id/summarylayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:id="@+id/layoutdetail"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/satulayout"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <LinearLayout
+                            android:id="@+id/layout1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="0dp"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/labelcode"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Code *"
+                                android:textSize="@dimen/font_size" />
+
+                            <LinearLayout
+                                android:id="@+id/layedt1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorWhite"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/edtcode"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:inputType="text|textCapCharacters"
+                                    android:textSize="@dimen/font_size" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="3dp"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/labelname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Name"
+                                android:textSize="@dimen/font_size" />
+
+                            <LinearLayout
+                                android:id="@+id/layedt2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorWhite"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/edtname"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:inputType="text"
+                                    android:textSize="@dimen/font_size" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="3dp"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/labelnpwp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="NPWP"
+                                android:textSize="@dimen/font_size" />
+
+                            <LinearLayout
+                                android:id="@+id/layedt3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorWhite"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/edtnpwp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:inputType="text"
+                                    android:textSize="@dimen/font_size" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="3dp"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/labelcusttype"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Customer Category"
+                                android:textSize="@dimen/font_size" />
+
+                            <LinearLayout
+                                android:id="@+id/layedt4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorWhite"
+                                android:orientation="horizontal">
+
+                                <Spinner
+                                    android:id="@+id/edtcustcat"
+                                    android:layout_width="250dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="left"
+                                    android:inputType="text"
+                                    android:textSize="@dimen/font_size" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="3dp"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/labelstatus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Status"
+                                android:textSize="@dimen/font_size" />
+
+                            <LinearLayout
+                                android:id="@+id/layedt5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorWhite"
+                                android:orientation="horizontal">
+
+                                <Spinner
+                                    android:id="@+id/edtstatus"
+                                    android:layout_width="180dp"
+                                    android:layout_height="50dp"
+                                    android:layout_gravity="left"
+                                    android:inputType="text"
+                                    android:textSize="@dimen/font_size" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutaddress"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/satulayout"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <LinearLayout
+                            android:id="@+id/layoutb1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="0dp"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/labeladdress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Address"
+                                android:textSize="@dimen/font_size" />
+
+                            <LinearLayout
+                                android:id="@+id/layedtb1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorWhite"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/edtaddress"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:inputType="text"
+                                    android:textSize="@dimen/font_size" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutb2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="3dp"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/labelcity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="City"
+                                android:textSize="@dimen/font_size" />
+
+                            <LinearLayout
+                                android:id="@+id/layedtb2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorWhite"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/edtcity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:inputType="text"
+                                    android:textSize="@dimen/font_size" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutb3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="3dp"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/labelprovince"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Province"
+                                android:textSize="@dimen/font_size" />
+
+                            <LinearLayout
+                                android:id="@+id/layedtb3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorWhite"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/edtprovince"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:inputType="text"
+                                    android:textSize="@dimen/font_size" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutb4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="3dp"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/labelcountry"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Country"
+                                android:textSize="@dimen/font_size" />
+
+                            <LinearLayout
+                                android:id="@+id/layedtb4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorWhite"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/edtcountry"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:inputType="text"
+                                    android:textSize="@dimen/font_size" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutb5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="3dp"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/labelpostalcode"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Postal Code"
+                                android:textSize="@dimen/font_size" />
+
+                            <LinearLayout
+                                android:id="@+id/layedtb5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorWhite"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/edtpostalcode"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:inputType="number"
+                                    android:textSize="@dimen/font_size" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutb6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="3dp"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/labelphone1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Phone 1"
+                                android:textSize="@dimen/font_size" />
+
+                            <LinearLayout
+                                android:id="@+id/layedtb6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorWhite"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/edtphone1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:inputType="text"
+                                    android:textSize="@dimen/font_size" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutb7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="3dp"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/labelphone2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Phone 2"
+                                android:textSize="@dimen/font_size" />
+
+                            <LinearLayout
+                                android:id="@+id/layedtb7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorWhite"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/edtphone2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:inputType="text"
+                                    android:textSize="@dimen/font_size" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutb8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="3dp"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/labelfax"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Fax"
+                                android:textSize="@dimen/font_size" />
+
+                            <LinearLayout
+                                android:id="@+id/layedtb8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorWhite"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/edtfax"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:inputType="text"
+                                    android:textSize="@dimen/font_size" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutb9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="3dp"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/labelemail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Email"
+                                android:textSize="@dimen/font_size" />
+
+                            <LinearLayout
+                                android:id="@+id/layedtb9"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorWhite"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/edtemail"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:inputType="text"
+                                    android:textSize="@dimen/font_size" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/layoutbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="700dp"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnsave"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rb_bluedark"
+                    android:text="@string/saveButton"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/font_size" />
+
+                <Button
+                    android:id="@+id/btncancel"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rb_bluedark"
+                    android:text="@string/exitButton"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/font_size" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/layoutlistmain"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layoutlistatas"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="0.2"
+                android:gravity="left"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_size_normal" />
+
+            <TextView
+                android:id="@+id/tnotes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="0.7"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_size_normal" />
+
+            <TextView
+                android:id="@+id/tid"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_weight="0.1"
+                android:text="IDDDDD"
+                android:textColor="#000000"
+                android:textSize="@dimen/font_size_normal"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutlistbawah"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tqty"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.15"
+                android:gravity="left"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_size_normal" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.05"
+                android:gravity="left"
+                android:text="x"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_size_normal" />
+
+            <TextView
+                android:id="@+id/tprice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.3"
+                android:gravity="left"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_size_normal" />
+
+            <TextView
+                android:id="@+id/tdisc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.2"
+                android:gravity="left"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_size_normal" />
+
+            <TextView
+                android:id="@+id/tsubtotal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.3"
+                android:gravity="left"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/font_size_normal" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

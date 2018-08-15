@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+	android:orientation="horizontal"
+	>
+
+	<LinearLayout
+    	android:id="@+id/layoutlistkanan"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:gravity="center"
+		android:padding="5dp"
+		android:orientation="vertical" >
+
+		<LinearLayout
+			android:id="@+id/layoutlist1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal" >
+
+			<TextView
+				android:id="@+id/tcode"
+				android:layout_width="0dp"
+				android:layout_weight="0.4"
+				android:layout_height="wrap_content"
+				android:textSize="@dimen/font_size"
+				android:layout_gravity="center"
+				android:gravity="left"
+				android:text="CODE"
+				android:textColor="@color/colorBlack"/>
+
+			<TextView
+				android:id="@+id/tname"
+				android:layout_width="0dp"
+				android:layout_weight="0.5"
+				android:gravity="left"
+				android:layout_gravity="center"
+				android:layout_height="wrap_content"
+				android:textSize="@dimen/font_size"
+				android:text="NAME"
+				android:textColor="@color/colorBlack"/>
+
+			<TextView
+				android:id="@+id/tdepartment"
+				android:layout_width="0dp"
+				android:layout_weight="0.8"
+				android:layout_height="wrap_content"
+				android:textSize="@dimen/font_size"
+				android:layout_gravity="center"
+				android:gravity="left"
+				android:text="DEPARTMENT"
+				android:textColor="@color/colorBlack"/>
+
+			<TextView
+				android:id="@+id/ttype"
+				android:layout_width="0dp"
+				android:layout_weight="0.5"
+				android:gravity="left"
+				android:layout_gravity="center"
+				android:layout_height="wrap_content"
+				android:textSize="@dimen/font_size"
+				android:text="TYPE"
+				android:textColor="@color/colorBlack"/>
+
+			<TextView
+				android:id="@+id/titemunit"
+				android:layout_width="0dp"
+				android:layout_weight="0.5"
+				android:gravity="left"
+				android:layout_gravity="center"
+				android:layout_height="wrap_content"
+				android:textSize="@dimen/font_size"
+				android:text="ITEM UNIT"
+				android:textColor="@color/colorBlack"/>
+
+			<TextView
+				android:id="@+id/tminqty"
+				android:layout_width="0dp"
+				android:layout_weight="0.5"
+				android:gravity="left"
+				android:layout_gravity="center"
+				android:layout_height="wrap_content"
+				android:textSize="@dimen/font_size"
+				android:text="MIN QTY"
+				android:textColor="@color/colorBlack"/>
+			<TextView
+				android:id="@+id/tid"
+				android:layout_width="0dp"
+				android:layout_weight="0"
+				android:layout_height="wrap_content"
+				android:textSize="@dimen/font_size"
+				android:layout_gravity="top"
+				android:text="IDDDDD"
+				android:visibility="invisible"
+				android:textColor="#000000"/>
+		</LinearLayout>
+
+	</LinearLayout>
+
+
+</LinearLayout>
